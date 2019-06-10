@@ -1,7 +1,10 @@
-FROM scratch
-ADD alpine-minirootfs-3.9.4-x86_64.tar.gz /
+# Alpine based stockfish container
+# https://github.com/official-stockfish/Stockfish
+#
 
-LABEL maintainer "CLF. P <CrealCode@gmail.com>"
+FROM bitnami/minideb:stretch
+
+LABEL maintainer "Kayvan Sylvan <kayvansylvan@gmail.com>"
 
 ENV SOURCE_REPO https://github.com/official-stockfish/Stockfish
 ENV VERSION master
